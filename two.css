@@ -1,0 +1,54 @@
+.main{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+#head{
+  text-align: center;
+}
+h4{
+  color: green;
+  text-align: center;
+}
+.main div{
+  box-sizing: border-box;
+}
+.row1,.row2,.row3,.row4,.row5,.row6,.row7,.row8,.row9{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+@media (min-width:600px) {
+  .main{
+    width: 600px;
+  margin: auto;
+  }
+  .row1,.row6{
+    width: 100%;
+  }
+  .row2,.row3,.row4,.row5{
+    width: 50%;
+  }
+  .row7,.row8,.row9{
+    width: 33.3%;
+  }
+
+}
+@media (min-width:800px) {
+.main{
+  width: 800px;
+}
+.row1{
+  width: 60%;
+}
+.row2{
+  width: 40%;
+}
+.row3,.row4,.row5{
+  width: 33.3%;
+}
+.row6,.row7,.row8,.row9{
+  width: 50%;
+}
+}
